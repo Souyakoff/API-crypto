@@ -1,0 +1,44 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #ff9900;
+    color: white;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    width: 100%;
+    padding: 1em;
+}
+
+#transactions {
+    margin-top: 20px;
+}
+
+.transaction {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 0.5em 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.transaction p {
+    margin: 0.5em 0;
+}
