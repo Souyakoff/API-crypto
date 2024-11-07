@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1d2b64, #f8cdda);
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ecf0f1;
+    margin-bottom: 1.5em;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+main {
+    max-width: 800px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2em;
+    padding: 0 1em;
+}
+
+
+section {
+    background: #2c3e50;
+    border-radius: 16px;
+    padding: 1.5em;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+    padding-bottom: 0.2em;
+}
+
+h2 {
+    font-size: 1.6em;
+    color: #ecf0f1;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.4em;
+    margin-bottom: 0.8em;
+}
+
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+
+#prices div, #difficulty div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6em 0;
+    font-size: 1.1em;
+    border-bottom: 1px solid #1c2833;
+    color: #f0f0f0;
+    transition: color 0.2s;
+}
+
+#prices div:hover, #difficulty div:hover {
+    color: #1abc9c;
+}
+
+#prices div:last-child, #difficulty div:last-child {
+    border-bottom: none;
+}
+
+strong {
+    color: #1abc9c;
+    font-weight: 600;
+}
+
+button {
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #2980b9, #3498db);
+    transform: translateY(-3px);
+}
+
+section, button {
+    animation: fadeIn 0.8s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
